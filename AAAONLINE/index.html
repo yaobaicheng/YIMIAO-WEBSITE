@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PT. YIMIAO HUANYU TECHNOLOGY INDONESIA">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 顶部快捷栏：文字在 content.js > locales > 各语言 > utility 修改。 -->
+  <div class="utility-bar">
+    <span data-t="utility.tagline"></span>
+    <div>
+      <a href="#contact" data-t="utility.careers"></a>
+      <a href="#contact" data-t="utility.contact"></a>
+    </div>
+  </div>
+
+  <!-- 主导航：文字在 content.js > locales > 各语言 > nav 修改。 -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top">
+      <span class="brand-mark" data-brand>Y</span>
+      <img class="brand-logo-slot" data-brand-logo alt="" aria-hidden="true">
+      <span data-brand-name></span>
+    </a>
+    <nav class="main-nav">
+      <a href="#about" data-t="nav.about"></a>
+      <a href="#products" data-t="nav.products"></a>
+      <a href="#solutions" data-t="nav.solutions"></a>
+      <a href="#support" data-t="nav.support"></a>
+      <a href="#contact" data-t="nav.contact"></a>
+    </nav>
+    <div class="header-tools">
+      <select id="languageSelect" aria-label="Language" data-aria-t="labels.languageSelector">
+
+      </select>
+      <button class="menu-toggle" type="button" aria-label="菜单" data-aria-t="labels.menu"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 第1页｜印尼充足库存
+         图片：改下面 data-page-image 的路径。
+         调色板：page-bg 背景、page-text 文字、page-accent 主色、page-soft 浅色。
+         大图透明度：page-photo（0 = 只看背景色，1 = 原图；文字压在图上建议 0.4～0.6）。
+         当前调色板：背景 #EAF5FF ｜文字 #123F69 ｜主色 #1689E8 ｜浅色 #D5EBFF ｜大图 0.55 -->
+    <section class="hero" id="home"
+      data-page-image="assets/optimized/hvac-materials-hero.webp"
+      style="
+        --page-bg:#EAF5FF;
+        --page-text:#123F69;
+        --page-accent:#1689E8;
+        --page-soft:#D5EBFF;
+        --page-muted:#52779B;
+        --page-photo:0.55">
+      <div class="hero-image" id="heroImage"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-t="hero.eyebrow"></p>
+        <h1 data-html="hero.title"></h1>
+        <p class="hero-text" data-t="hero.text"></p>
+        <a class="button lime" href="#about"><span data-t="actions.learnMore"></span><b>↗</b></a>
+      </div>
+      <div class="hero-bottom"><span data-t="labels.scrollToExplore"></span><i></i></div>
+    </section>
+
+    <!-- 第2页｜浙江海亮铜管
+         图片：改下面 data-page-image 的路径。
+         调色板：page-bg 背景、page-text 文字、page-accent 主色、page-soft 浅色。
+         当前调色板：背景 #FFFFFF ｜文字 #174A75 ｜主色 #117ED8 ｜浅色 #E8F5FF -->
+    <section class="intro section" id="about"
+      data-page-image="assets/optimized/浙江海亮铜管.webp"
+      style="
+        --page-bg:#FFFFFF;
+        --page-text:#174A75;
+        --page-accent:#117ED8;
+        --page-soft:#E8F5FF;
+        --page-muted:#537391">
+      <div>
+        <p class="eyebrow" data-t="labels.aboutEyebrow"></p>
+        <h2 data-html="about.title"></h2>
+      </div>
+      <div class="intro-copy">
+        <p data-t="about.text"></p>
+        <a class="text-link" href="#products"><span data-t="actions.discover"></span><b>→</b></a>
+      </div>
+      <div class="media-slot section-media about-media" id="introImage" aria-hidden="true"></div>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <!-- 第3页｜成为您在印尼的冷暖辅材仓库
+         图片：改下面 data-page-image 的路径。
+         调色板：page-bg 背景、page-text 文字、page-accent 主色、page-soft 浅色。
+         大图透明度：page-photo（0 = 只看背景色，1 = 原图；文字压在图上建议 0.4～0.6）。
+         当前调色板：背景 #DCEFFF ｜文字 #12436F ｜主色 #087FCE ｜浅色 #C8E6FF ｜大图 0.5 -->
+    <section class="vision" id="vision"
+      data-page-image="assets/optimized/仓库.webp"
+      style="
+        --page-bg:#DCEFFF;
+        --page-text:#12436F;
+        --page-accent:#087FCE;
+        --page-soft:#C8E6FF;
+        --page-muted:#3E6A91;
+        --page-photo:0.5">
+      <div class="vision-image" id="visionImage"></div>
+      <div class="vision-overlay"></div>
+      <div class="vision-content">
+        <p class="eyebrow" data-t="vision.eyebrow"></p>
+        <h2 data-html="vision.title"></h2>
+        <a class="button outline" href="#contact"><span data-t="actions.learnMore"></span><b>↗</b></a>
+      </div>
+      <span class="vertical-label" data-t="labels.visionVertical"></span>
+    </section>
+
+    <!-- 第4页｜覆盖多场景的产品体系
+         大图：改下面 data-page-image 的路径；每个产品小图在 content.js > products 中修改。
+         调色板：page-bg 背景、page-text 文字、page-accent 主色、page-soft 浅色。
+         当前调色板：背景 #F6FBFF ｜文字 #163F66 ｜主色 #237FCA ｜浅色 #E4F2FF -->
+    <section class="products section" id="products"
+      data-page-image=""
+      style="
+        --page-bg:#F6FBFF;
+        --page-text:#163F66;
+        --page-accent:#237FCA;
+        --page-soft:#E4F2FF;
+        --page-muted:#5A7790">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow" data-t="labels.productsEyebrow"></p>
+          <h2 data-html="products.title"></h2>
+        </div>
+        <a class="text-link" href="#contact"><span data-t="actions.productInquiry"></span><b>→</b></a>
+      </div>
+      <div class="media-slot section-media products-media" id="productsImage" aria-hidden="true"></div>
+      <div class="product-filter" id="productFilter"></div>
+      <div class="product-grid" id="productsGrid"></div>
+      <button class="load-more" id="loadMore" type="button"><span data-t="actions.loadMore"></span><b>↓</b></button>
+    </section>
+
+    <!-- 第5页｜以专业方案连接每一种需求
+         大图：改下面 data-page-image 的路径；每个方案小图在 content.js > solutions 中修改。
+         调色板：page-bg 背景、page-text 文字、page-accent 主色、page-soft 浅色。
+         当前调色板：背景 #E9F5FF ｜文字 #14456F ｜主色 #1485DE ｜浅色 #D7EBFF -->
+    <section class="solutions" id="solutions"
+      data-page-image=""
+      style="
+        --page-bg:#E9F5FF;
+        --page-text:#14456F;
+        --page-accent:#1485DE;
+        --page-soft:#D7EBFF;
+        --page-muted:#4C6E8D">
+      <div class="solutions-heading section">
+        <p class="eyebrow" data-t="labels.solutionsEyebrow"></p>
+        <h2 data-html="solutions.title"></h2>
+        <p data-t="solutions.text"></p>
+      </div>
+      <div class="media-slot section-media solutions-media" id="solutionsImage" aria-hidden="true"></div>
+      <div class="solution-list" id="solutionsList"></div>
+    </section>
+
+    <!-- 第6页｜全程服务，让合作更简单
+         大图：改下面 data-page-image 的路径；服务卡片小图在 content.js > support 中修改。
+         调色板：page-bg 背景、page-text 文字、page-accent 主色、page-soft 浅色。
+         当前调色板：背景 #F4FAFF ｜文字 #173E65 ｜主色 #1D89DE ｜浅色 #E1F1FF -->
+    <section class="support section" id="support"
+      data-page-image=""
+      style="
+        --page-bg:#F4FAFF;
+        --page-text:#173E65;
+        --page-accent:#1D89DE;
+        --page-soft:#E1F1FF;
+        --page-muted:#54748F">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow" data-t="labels.supportEyebrow"></p>
+          <h2 data-html="support.title"></h2>
+        </div>
+      </div>
+      <div class="media-slot section-media support-media" id="supportImage" aria-hidden="true"></div>
+      <div class="support-grid" id="supportGrid"></div>
+    </section>
+
+    <!-- 第7页｜企业画廊
+         大图：改下面 data-page-image；每张画廊小图在 content.js > gallery 中修改。
+         点击有图的卡片可放大查看；没有图片的卡片会显示占位，不会破图。
+         调色板：page-bg 背景、page-text 文字、page-accent 主色、page-soft 浅色。
+         当前调色板：背景 #FFFFFF ｜文字 #16436D ｜主色 #258BE5 ｜浅色 #E5F3FF -->
+    <section class="gallery section" id="gallery"
+      data-page-image=""
+      style="
+        --page-bg:#FFFFFF;
+        --page-text:#16436D;
+        --page-accent:#258BE5;
+        --page-soft:#E5F3FF;
+        --page-muted:#557791">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow" data-t="labels.galleryEyebrow"></p>
+          <h2 data-t="gallery.title"></h2>
+        </div>
+      </div>
+      <div class="media-slot section-media gallery-media" id="galleryImage" aria-hidden="true"></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- 第8页｜让我们开启对话
+         背景图：改下面 data-page-image 的路径；大图透明度用 page-photo 控制。
+         二维码：在 content.js > contactLinks 中修改对应二维码项目的 image；网页上点击二维码可放大。
+         调色板：page-bg 背景、page-text 文字、page-accent 主色、page-soft 浅色。
+         当前调色板：背景 #EAF5FF ｜文字 #153F66 ｜主色 #157FD1 ｜浅色 #D7EBFD ｜大图 0.14 -->
+    <section class="contact" id="contact"
+      data-page-image=""
+      style="
+        --page-bg:#EAF5FF;
+        --page-text:#153F66;
+        --page-accent:#157FD1;
+        --page-soft:#D7EBFD;
+        --page-muted:#4F7395;
+        --page-photo:0.14">
+      <div class="contact-image-slot" id="contactImage" aria-hidden="true"></div>
+      <div class="contact-copy">
+        <p class="eyebrow" data-t="labels.contactEyebrow"></p>
+        <h2 data-t="contact.title"></h2>
+        <p data-t="contact.text"></p>
+        <a class="contact-main" data-contact-main href="mailto:yimiaohuanyu@gmail.com">
+          <span data-t="actions.contactUs"></span><b>↗</b>
+        </a>
+      </div>
+      <div class="contact-links" id="contactLinks"></div>
+    </section>
+  </main>
+
+  <!-- 页脚。地址、电话和邮箱：content.js > company.contact。 -->
+  <footer>
+    <a class="brand" href="#top">
+      <span class="brand-mark" data-brand>Y</span>
+      <img class="brand-logo-slot" data-brand-logo alt="" aria-hidden="true">
+      <span data-brand-name></span>
+    </a>
+    <div class="footer-contact" id="footerContact"></div>
+    <div class="footer-bottom"><span data-copyright></span><a href="#top" data-t="actions.backTop"></a></div>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
